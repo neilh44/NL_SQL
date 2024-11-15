@@ -1,0 +1,81 @@
+
+tickets.json
+
+{
+    "id": "00jeDHlCl92ltvRESDBx",
+    "shiftId": "rIhBKNbbhXm4hF11oWL0",
+    "linkedTicketCode": "002",
+    "vehicleInfo": {
+        "color": "Gold",
+        "vehicleImages": [],
+        "model": "Avanti",
+        "tag": "123TEST",
+        "make": "Avanti Motors",
+        "ped": []
+    },
+    "ticketType": "restaurant",
+    "reparkingTime": "",
+    "customerName": "blanco",
+    "customerPhone": "1231231234",
+    "ticketNo": "4U2P",
+    "reparkedCount": 0,
+    "locationId": "qlDo6aLrhV4HnIbu1mYM",
+    "parkingZone": "Main Deck",
+    "pickupZone": "Main Entrance",
+    "customerEmail": "blank@mayor.test",
+    "customerId": "CK71AhieypDUaTDCKMQl",
+    "shiftIds": ["rIhBKNbbhXm4hF11oWL0"],
+    "customerLastName": "mayor",
+    "createdAt": { "_seconds": 1699362095, "_nanoseconds": 366000000 },
+    "checkInAt": { "_seconds": 1699362095, "_nanoseconds": 366000000 },
+    "spot": "45",
+    "keySpot": "67",
+    "acceptComplementary": false,
+    "rateId": "QGjM00UtLa1gcOHYkA7p",
+    "pulledBy": "esteban gonzalez",
+    "lastStatusUpdatedBy": "wgVyqfmbqiq4tjBLzFnT",
+    "parkedAt": { "_seconds": 1702654604, "_nanoseconds": 906000000 },
+    "currentStatus": "check-out",
+    "modifiedAt": { "_seconds": 1703121940, "_nanoseconds": 608000000 },
+    "payment": {
+        "amount": 25,
+        "reParkingFee": 0,
+        "convenienceFee": 5,
+        "method": "cash",
+        "rate": 20,
+        "discount": "",
+        "complementary": false,
+        "tips": 0,
+        "transactionId": "7M6VZ44JPU",
+        "status": "paid",
+        "paymentDate": { "_seconds": 1703121940, "_nanoseconds": 608000000 }
+    },
+    "lastStatusUpdatedAt": {
+        "_seconds": 1703121940,
+        "_nanoseconds": 608000000
+    },
+    "ticketTypeInfo": {
+        "smsPreferences": {
+            "parked": true,
+            "in": false,
+            "out": true,
+            "pull": true,
+            "repark": false,
+            "cancelledPull": false,
+            "requested": false,
+            "checkIn": false,
+            "ready": true,
+            "voided": false,
+            "cancelledRequested": true,
+            "checkOut": true,
+            "issued": false
+        },
+        "inOut": false,
+        "ticketLength": "Transient",
+        "vehicleRequest": true,
+        "serviceRating": true,
+        "type": "restaurant"
+    },
+    "isPaymentMigrated": true
+},
+

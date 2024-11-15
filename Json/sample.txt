@@ -1,0 +1,53 @@
+activities.json
+{
+    "ticketId": "00jeDHlCl92ltvRESDBx",
+    "id": "3LeVQKqpJRCMozf9wdaR",
+    "shiftId": "rIhBKNbbhXm4hF11oWL0",
+    "locationId": "qlDo6aLrhV4HnIbu1mYM",
+    "type": "check-in",
+    "userName": "esteban gonzalez",
+    "userId": "wgVyqfmbqiq4tjBLzFnT",
+    "createdAt": {
+        "_seconds": 1699362095,
+        "_nanoseconds": 847000000
+    },
+    "collectionGroup": "activities"
+}
+
+companies.json
+{
+    "id": "1NLDqLKTIHrDlRQUSFF1",
+    "companyEmail": "dvtest3@test.com",
+    "companyPhone": "9876543456",
+    "status": "pending",
+    "createdAt": { "_seconds": 1637165827, "_nanoseconds": 20000000 },
+    "modifiedAt": { "_seconds": 1637165827, "_nanoseconds": 20000000 },
+    "companyName": "Test4",
+    "offeredFreeTickets": 100,
+    "availableFreeTickets": 0,
+    "isManaged": true,
+    "stripeCustomerId": "cus_P5furv3JFJi9GO",
+    "companySlug": "test4"
+},
+
+
+
+users,json
+
+{
+    "id": "02hqtuirk2IrSfEjqQ2M",
+    "firstName": "",
+    "lastName": "",
+    "notification": false,
+    "role": "customer",
+    "isPhoneVerified": false,
+    "phone": "8888552222",
+    "accessPermission": "",
+    "smsNotification": true,
+    "locationIds": ["vaQHTcZoUPgycrg2y3Dm"],
+    "isRegistered": false,
+    "email": "",
+    "status": "enabled",
+    "createdAt": { "_seconds": 1705474408, "_nanoseconds": 114000000 },
+    "modifiedAt": { "_seconds": 1705474408, "_nanoseconds": 114000000 }
+},

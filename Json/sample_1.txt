@@ -1,0 +1,109 @@
+Location.json
+{
+    "reparkingAfter": 10,
+    "city": "",
+    "smartTips": {
+        "suggestionOne": "0.00",
+        "suggestionThree": "0.00",
+        "suggestionTwo": "0.00"
+    },
+    "rateId": null,
+    "ticketSettings": {
+        "vehicleColor": false,
+        "vehicleKey": false,
+        "keySpot": true,
+        "vehicleImages": false,
+        "customerName": false,
+        "vehicleMake": false,
+        "vehiclePED": false,
+        "customerPhone": true,
+        "pickupZone": true,
+        "parkingZone": true,
+        "customerEmail": false,
+        "spot": false,
+        "vehicleModel": false,
+        "customerLastName": false,
+        "vehicleTag": true
+    },
+    "locationStatus": "close",
+    "totalRatingCount": 0,
+    "terms": "",
+    "reParkingFeature": true,
+    "paymentMethods": {
+        "frontDesk": false,
+        "creditCard": false,
+        "cash": false
+    },
+    "addressLine1": "",
+    "allowComplementary": true,
+    "addressLine2": "",
+    "id": "03ajofOlLklzewZxUzgW",
+    "nextInQueue": false,
+    "state": "",
+    "guestRating": true,
+    "guestExperience": true,
+    "isNewlyAdded": true,
+    "acceptPayments": false,
+    "reParkingFee": "0.00",
+    "suggestedTip": "0.00",
+    "locationName": "Reside",
+    "totalRating": 0,
+    "guestTicketPayment": true,
+    "zipcode": "",
+    "companyId": "ttk7ZkDtgndPY3wCnc78",
+    "convenienceFee": "0.00",
+    "hotelProfile": false,
+    "complementaryReasons": [],
+    "autoReparking": false,
+    "allowSmartTip": false,
+    "enableDiscounts": false,
+    "status": "enabled",
+    "createdAt": { "_seconds": 1674789391, "_nanoseconds": 125000000 },
+    "timeZone": "America/New_York",
+    "parkingZones": [{ "slots": 50, "name": " " }],
+    "podiums": [{ "keySlots": 5, "name": "Hb" }],
+    "modifiedAt": { "_seconds": 1674789410, "_nanoseconds": 384000000 },
+    "pickupZones": [{ "name": "Bh" }],
+    "heroImage": {
+        "isEnabled": true,
+        "selectedImage": "heroImages/default/04.jpg"
+    },
+    "ticketTypes": [
+        {
+            "smsPreferences": {
+                "repark": true,
+                "parked": true,
+                "checkIn": true,
+                "in": true,
+                "ready": true,
+                "out": true
+            },
+            "inOut": true,
+            "inUnitParking": false,
+            "estimatedPullTime": true,
+            "placeInLine": true,
+            "inUnitSummon": false,
+            "serviceRating": true,
+            "vehicleRequest": true,
+            "type": "residential"
+        },
+        {
+            "smsPreferences": {
+                "repark": false,
+                "parked": false,
+                "checkIn": false,
+                "in": false,
+                "ready": false,
+                "out": false
+            },
+            "inOut": false,
+            "estimatedPullTime": true,
+            "placeInLine": true,
+            "serviceRating": true,
+            "vehicleRequest": true,
+            "type": "guest"
+        }
+    ],
+    "vehiclePickupZones": [{ "name": "Valet Ramp" }],
+    "locationSlug": "reside"
+},

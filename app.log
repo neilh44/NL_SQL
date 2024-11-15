@@ -1,0 +1,288 @@
+2024-11-12 16:04:43,996 - DEBUG - Logging initialized.
+2024-11-12 16:04:44,003 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:04:44,005 - INFO - Executed SQL query: 
+    SELECT l.* 
+    FROM locations l 
+    JOIN companies c ON l.companyId = c.id 
+    WHERE c.companyName = 'DevTest';
+    
+2024-11-12 16:04:44,006 - INFO - Found 0 results.
+2024-11-12 16:04:44,006 - INFO - Database connection closed.
+2024-11-12 16:05:27,535 - DEBUG - Logging initialized.
+2024-11-12 16:05:27,538 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:05:27,539 - INFO - Executed SQL query: 
+    SELECT l.* 
+    FROM locations l 
+    WHERE l.companyId = 'company_id';
+    
+2024-11-12 16:05:27,539 - INFO - Found 0 results.
+2024-11-12 16:05:27,539 - INFO - Database connection closed.
+2024-11-12 16:06:13,059 - DEBUG - Logging initialized.
+2024-11-12 16:06:13,062 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:06:13,062 - INFO - Executed SQL query: 
+   SELECT c.companyName, l.locationName
+    FROM companies c
+    JOIN locations l ON c.id = l.companyId;
+    
+2024-11-12 16:06:13,062 - INFO - Found 0 results.
+2024-11-12 16:06:13,063 - INFO - Database connection closed.
+2024-11-12 16:07:35,526 - DEBUG - Logging initialized.
+2024-11-12 16:07:35,533 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:07:35,535 - INFO - Executed SQL query: 
+SELECT * FROM companies WHERE id = 'i17LpXVJIbtqzdS9T4Ab';
+    
+2024-11-12 16:07:35,536 - INFO - Found 0 results.
+2024-11-12 16:07:35,536 - INFO - Database connection closed.
+2024-11-12 16:07:52,539 - DEBUG - Logging initialized.
+2024-11-12 16:07:52,541 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:07:52,542 - INFO - Executed SQL query: SELECT * FROM companies WHERE id = 'i17LpXVJIbtqzdS9T4Ab';
+2024-11-12 16:07:52,542 - INFO - Found 0 results.
+2024-11-12 16:07:52,542 - INFO - Database connection closed.
+2024-11-12 16:08:43,264 - DEBUG - Logging initialized.
+2024-11-12 16:08:43,266 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:08:43,267 - INFO - Executed SQL query: 
+    SELECT * 
+    FROM companies 
+    WHERE id = 'i17LpXVJIbtqzdS9T4Ab';
+    
+2024-11-12 16:08:43,267 - INFO - Found 0 results.
+2024-11-12 16:08:43,267 - INFO - Database connection closed.
+2024-11-12 16:57:16,961 - DEBUG - Logging initialized.
+2024-11-12 16:57:16,973 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 16:57:16,976 - ERROR - Error executing SQL query: no such column: company_name
+2024-11-12 16:57:16,976 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: no such column: company_name
+2024-11-12 17:03:04,769 - DEBUG - Logging initialized.
+2024-11-12 17:03:04,776 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:03:04,777 - ERROR - Error executing SQL query: near "name": syntax error
+2024-11-12 17:03:04,777 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: near "name": syntax error
+2024-11-12 17:03:23,505 - DEBUG - Logging initialized.
+2024-11-12 17:03:23,509 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:03:23,509 - ERROR - Error executing SQL query: no such column: l.company_id
+2024-11-12 17:03:23,509 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: no such column: l.company_id
+2024-11-12 17:35:20,788 - DEBUG - Logging initialized.
+2024-11-12 17:35:20,797 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:35:20,799 - ERROR - Error executing SQL query: no such column: name
+2024-11-12 17:35:20,799 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: no such column: name
+2024-11-12 17:35:31,126 - DEBUG - Logging initialized.
+2024-11-12 17:35:31,128 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:35:31,129 - ERROR - Error executing SQL query: near "name": syntax error
+2024-11-12 17:35:31,129 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: near "name": syntax error
+2024-11-12 17:35:48,975 - DEBUG - Logging initialized.
+2024-11-12 17:35:48,984 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:35:48,984 - ERROR - Error executing SQL query: near "name": syntax error
+2024-11-12 17:35:48,984 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: near "name": syntax error
+2024-11-12 17:36:01,694 - DEBUG - Logging initialized.
+2024-11-12 17:36:01,711 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:36:01,713 - ERROR - Error executing SQL query: no such column: l.company_id
+2024-11-12 17:36:01,713 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: no such column: l.company_id
+2024-11-12 17:37:00,767 - DEBUG - Logging initialized.
+2024-11-12 17:37:00,776 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:37:00,776 - ERROR - Error executing SQL query: no such column: c.company_name
+2024-11-12 17:37:00,776 - ERROR - Exception details:
+Traceback (most recent call last):
+  File "/Users/nileshhanotia/Projects/Firebase-ai-bot_1/t1.py", line 26, in execute_sql_query
+    cursor.execute(sql_query)
+sqlite3.OperationalError: no such column: c.company_name
+2024-11-12 17:37:29,105 - DEBUG - Logging initialized.
+2024-11-12 17:37:29,113 - INFO - Connected to the database: /Users/nileshhanotia/Projects/Firebase-ai-bot_1/merged_db.db
+2024-11-12 17:37:29,115 - INFO - Executed SQL query: 
+    SELECT l.*
+    FROM locations l
+    JOIN companies c ON l.id = c.id
+    WHERE c.companyname = 'DevTest';
+    
+2024-11-12 17:37:29,116 - INFO - Found 0 results.
+2024-11-12 17:37:29,117 - INFO - Database connection closed.
+2024-11-13 11:31:13,027 - INFO - Received query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:31:13,038 - INFO - No specific table matched for query, defaulting to first table: companies
+2024-11-13 11:31:13,039 - INFO - Sending request to Groq API for query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:31:13,798 - INFO - Received response from Groq API: {'id': 'chatcmpl-91654250-3bb1-41ae-8888-886ab1d72d24', 'object': 'chat.completion', 'created': 1731477673, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'I think there might be some confusion! There is no "collection group" in the provided schema, and there is no column named "ticket id" either. However, I\'m assuming you\'re looking for a way to filter the companies based on a specific ID.\n\nBased on the schema, I\'m going to take a guess that you\'re looking for a way to filter the companies based on the "company_slug" column. If that\'s the case, you can use the following SQL query:\n\n```sql\nSELECT * FROM companies WHERE company_slug = \'00jeDHlCl92ltvRESDBx\';\n```\n\nThis query will return all columns (`*`) from the "companies" table where the "company_slug" column matches the specified ID.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.007341666, 'prompt_tokens': 136, 'prompt_time': 0.016076422, 'completion_tokens': 153, 'completion_time': 0.1275, 'total_tokens': 289, 'total_time': 0.143576422}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj1s5ehes1vnwse2xv1rb8c'}}
+2024-11-13 11:31:13,807 - INFO - Generated SQL query: SELECT * FROM companies WHERE company_slug = '00jeDHlCl92ltvRESDBx';
+2024-11-13 11:31:13,813 - INFO - No results found for the query.
+2024-11-13 11:39:01,534 - INFO - Received query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:39:01,586 - INFO - No specific table matched for query, defaulting to first table: companies
+2024-11-13 11:39:01,587 - INFO - Sending request to Groq API for query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:39:03,219 - INFO - Received response from Groq API: {'id': 'chatcmpl-decb91ed-f95a-4f35-8a8c-8c6f06eec0dc', 'object': 'chat.completion', 'created': 1731478143, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'I think there might be some confusion. There is no "collection group" in the provided SQLite database schema. However, I can help you with a query to retrieve the data from the \'companies\' table based on the provided ticket ID.\n\nAssuming the ticket ID is stored in the \'company_slug\' column, here\'s a possible SQL query:\n\n```sql\nSELECT * FROM companies WHERE company_slug = \'00jeDHlCl92ltvRESDBx\';\n```\n\nThis query will return all columns (`*`) from the \'companies\' table where the \'company_slug\' matches the provided ticket ID.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.00713878, 'prompt_tokens': 136, 'prompt_time': 0.005968959, 'completion_tokens': 124, 'completion_time': 0.103333333, 'total_tokens': 260, 'total_time': 0.109302292}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj27g05eszarktqs00keeee'}}
+2024-11-13 11:39:03,225 - INFO - Generated SQL query: SELECT * FROM companies WHERE company_slug = '00jeDHlCl92ltvRESDBx';
+2024-11-13 11:39:03,234 - INFO - No results found for the query.
+2024-11-13 11:41:13,059 - INFO - Received query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:41:13,065 - INFO - No specific table matched for query, defaulting to first table: companies
+2024-11-13 11:41:13,096 - INFO - Sending request to Groq API for query: show me collection group of ticket id 00jeDHlCl92ltvRESDBx
+2024-11-13 11:41:13,911 - INFO - Received response from Groq API: {'id': 'chatcmpl-8cadb4ea-6e27-4457-b2d2-7b5c8a2025fe', 'object': 'chat.completion', 'created': 1731478273, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'I think there might be a slight misunderstanding. The schema provided is for a "companies" table, but the natural language query mentions a "ticket id". Since there is no "tickets" table in the provided schema, I\'ll assume you meant to ask about the "companies" table.\n\nHowever, there is no column named "collection group" in the provided schema. It\'s possible that you meant to ask about a different column, such as "company_name" or "company_slug".\n\nIf you could provide more context or clarify what you mean by "collection group", I\'d be happy to help you with the SQL query.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0010481800000000027, 'prompt_tokens': 136, 'prompt_time': 0.060010796, 'completion_tokens': 127, 'completion_time': 0.105833333, 'total_tokens': 263, 'total_time': 0.165844129}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj2bffdezz9f0p5xhc8ykv4'}}
+2024-11-13 11:41:13,916 - INFO - Generated SQL query: {'error': 'No valid SQL query extracted from response'}
+2024-11-13 11:41:13,919 - WARNING - The generated query is not a SELECT query, so no results can be fetched.
+2024-11-13 11:41:50,048 - INFO - Received query: show me collection group of ticket 00jeDHlCl92ltvRESDBx from the tickets tables
+2024-11-13 11:41:50,103 - INFO - Sending request to Groq API for query: show me collection group of ticket 00jeDHlCl92ltvRESDBx from the tickets tables
+2024-11-13 11:41:50,816 - INFO - Received response from Groq API: {'id': 'chatcmpl-cc15fbf2-6459-4a8a-ba60-1ac90a2d9b0e', 'object': 'chat.completion', 'created': 1731478310, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "Based on the provided schema, I understand that you want to retrieve a collection of tickets that belong to a specific ticket number. Here's the equivalent SQL query:\n\n```sql\nSELECT * \nFROM tickets \nWHERE ticket_no = '00jeDHlCl92ltvRESDBx';\n```\n\nThis query will return all columns (`*`) from the `tickets` table where the `ticket_no` column matches the specified ticket number."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': -0.00041788599999999926, 'prompt_tokens': 168, 'prompt_time': 0.019157674, 'completion_tokens': 89, 'completion_time': 0.074166667, 'total_tokens': 257, 'total_time': 0.093324341}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj2ckkrfc3ap467zrf0vdtn'}}
+2024-11-13 11:41:50,836 - INFO - Generated SQL query: SELECT * 
+FROM tickets 
+WHERE ticket_no = '00jeDHlCl92ltvRESDBx';
+2024-11-13 11:41:50,862 - INFO - No results found for the query.
+2024-11-13 11:42:40,519 - INFO - Received query: sw me locations of company name DevTest
+2024-11-13 11:42:40,524 - INFO - Sending request to Groq API for query: sw me locations of company name DevTest
+2024-11-13 11:42:41,131 - INFO - Received response from Groq API: {'id': 'chatcmpl-46e09bc4-e7c6-40e6-944c-a457a996270b', 'object': 'chat.completion', 'created': 1731478360, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Based on the provided schema, the natural language query "sw me locations of company name DevTest" can be converted to the following valid SQL query:\n\n```sql\nSELECT * \nFROM locations \nWHERE company_id = \'DevTest\';\n```\n\nThis SQL query will return all columns (`*`) from the `locations` table where the `company_id` is equal to `\'DevTest\'`.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.008986692000000001, 'prompt_tokens': 148, 'prompt_time': 0.006502495, 'completion_tokens': 80, 'completion_time': 0.066666667, 'total_tokens': 228, 'total_time': 0.073169162}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj2e4vce1jrrbz0wnqerkex'}}
+2024-11-13 11:42:41,139 - INFO - Generated SQL query: SELECT * 
+FROM locations 
+WHERE company_id = 'DevTest';
+2024-11-13 11:42:41,144 - INFO - No results found for the query.
+2024-11-13 11:50:06,826 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 11:50:06,876 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me locations of company name DevTest' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 11:50:07,642 - INFO - Received response from Groq API: {'id': 'chatcmpl-d997e746-36cb-4db7-bfcf-55db1d9a538d', 'object': 'chat.completion', 'created': 1731478807, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "Based on the schema and the natural language query, I can generate the following SQL query:\n\n```\nSELECT l.location_name\nFROM companies c\nJOIN locations l ON c.id = l.company_id\nWHERE c.company_name = 'DevTest';\n```\n\nThis query will return the location names of the company 'DevTest'."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.00046984200000000156, 'prompt_tokens': 240, 'prompt_time': 0.027586302, 'completion_tokens': 66, 'completion_time': 0.055, 'total_tokens': 306, 'total_time': 0.082586302}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj2vrpsfnkbytjxnxqp1ebz'}}
+2024-11-13 11:50:07,651 - INFO - Generated SQL query: Based on the schema and the natural language query, I can generate the following SQL query:
+2024-11-13 11:50:07,653 - WARNING - The generated query is not a SELECT query, so no results can be fetched.
+2024-11-13 11:58:41,180 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 11:58:41,181 - ERROR - Error generating or executing the SQL query: 'LLMService' object has no attribute 'analyze_schema_and_generate_query'
+2024-11-13 11:58:59,984 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 11:58:59,989 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me locations of company name DevTest' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 11:59:00,602 - INFO - Received response from Groq API: {'id': 'chatcmpl-47716db9-72f7-4bfd-b271-14678d9cb7f8', 'object': 'chat.completion', 'created': 1731479340, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "Based on the schema and the natural language query, I can generate the following SQL query:\n\n```\nSELECT l.location_name\nFROM companies c\nJOIN locations l ON c.id = l.company_id\nWHERE c.company_name = 'DevTest';\n```\n\nThis query will return the location names of the company 'DevTest'."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.006686632000000001, 'prompt_tokens': 240, 'prompt_time': 0.013379736, 'completion_tokens': 66, 'completion_time': 0.056047089, 'total_tokens': 306, 'total_time': 0.069426825}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj3c1ckftd87kvt3c8wxc50'}}
+2024-11-13 11:59:00,614 - INFO - Generated SQL query: Based on the schema and the natural language query, I can generate the following SQL query:
+2024-11-13 11:59:00,617 - WARNING - The generated query is not a SELECT query, so no results can be fetched.
+2024-11-13 12:01:30,285 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 12:01:30,288 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me locations of company name DevTest' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:01:31,067 - INFO - Received response from Groq API: {'id': 'chatcmpl-c28bc4a6-33ce-4765-8015-f04a5578f1a1', 'object': 'chat.completion', 'created': 1731479490, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "I apologize, but the provided schema and relationships do not match the original schema you provided. The original schema had 'companies', 'locations', and no 'users', 'tickets', or 'activities' tables.\n\nHowever, based on the original schema, I can still generate an SQL query for the natural language query: 'show me locations of company name DevTest'.\n\nHere is the SQL query:\n\n```sql\nSELECT *\nFROM locations\nWHERE company_id IN (\n  SELECT id\n  FROM companies\n  WHERE company_name = 'DevTest'\n);\n```\n\nThis query will return all locations that belong to the company named 'DevTest'."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0018005279999999992, 'prompt_tokens': 444, 'prompt_time': 0.020222648, 'completion_tokens': 129, 'completion_time': 0.1075, 'total_tokens': 573, 'total_time': 0.127722648}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj3gm4yfca86x0wqpyws5y6'}}
+2024-11-13 12:01:31,076 - INFO - Generated SQL query: SELECT *
+FROM locations
+WHERE company_id IN (
+  SELECT id
+  FROM companies
+  WHERE company_name = 'DevTest'
+);
+2024-11-13 12:01:31,081 - INFO - No results found for the query.
+2024-11-13 12:05:42,711 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 12:05:42,712 - ERROR - Error generating or executing the SQL query: 'LLMService' object has no attribute '_infer_table_from_query'
+2024-11-13 12:06:08,142 - INFO - Received query: show me locations of company name DevTest
+2024-11-13 12:06:08,177 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me locations of company name DevTest' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:06:08,888 - INFO - Received response from Groq API: {'id': 'chatcmpl-34e5d47e-6513-4982-8d1a-5f6bdb7b51a9', 'object': 'chat.completion', 'created': 1731479768, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "I apologize, but the provided schema and relationships do not match the original schema and relationships you provided. The original schema had 'companies' and 'locations' tables, but the provided schema has 'companies', 'locations', 'users', 'tickets', and 'activities' tables.\n\nHowever, based on the original schema, I can still help you with the natural language query 'show me locations of company name DevTest'. Here's the SQL query:\n\n```sql\nSELECT l.*\nFROM locations l\nJOIN companies c ON l.company_id = c.id\nWHERE c.company_name = 'DevTest';\n```\n\nThis query joins the 'locations' table with the 'companies' table on the 'company_id' column, and then filters the results to only include locations where the company name is 'DevTest'."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0007247510000000026, 'prompt_tokens': 444, 'prompt_time': 0.050249891, 'completion_tokens': 163, 'completion_time': 0.135833333, 'total_tokens': 607, 'total_time': 0.186083224}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj3s3gafj1s83nsd6ty58c6'}}
+2024-11-13 12:06:08,897 - INFO - Generated SQL query: SELECT l.*
+FROM locations l
+JOIN companies c ON l.company_id = c.id
+WHERE c.company_name = 'DevTest';
+2024-11-13 12:06:08,906 - INFO - No results found for the query.
+2024-11-13 12:18:26,154 - INFO - Received query: show me the user name of user id wg24UxdW7Q2L4X7ssYqB
+2024-11-13 12:18:26,157 - WARNING - No tables found in the database.
+2024-11-13 12:18:26,159 - WARNING - No columns found for table: companies
+2024-11-13 12:18:26,239 - WARNING - No columns found for table: locations
+2024-11-13 12:18:26,241 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me the user name of user id wg24UxdW7Q2L4X7ssYqB' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:18:27,091 - INFO - Received response from Groq API: {'id': 'chatcmpl-ba832c23-f445-4fb9-aa44-d7232d839dda', 'object': 'chat.completion', 'created': 1731480506, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "I apologize, but the natural language query 'show me the user name of user id wg24UxdW7Q2L4X7ssYqB' does not match the provided schema. There is no 'users' table with a column 'id' that matches the provided user id.\n\nHowever, based on the provided schema, I can help you generate an SQL query to retrieve the company name and location name for a given company id. Here's an example:\n\n```\nSELECT c.company_name, l.location_name\nFROM companies c\nJOIN locations l ON c.id = l.company_id\nWHERE c.id = <company_id>;\n```\n\nReplace `<company_id>` with the actual company id you want to retrieve the company name and location name for.\n\nIf you want to retrieve the user name for a given user id, you would need to provide a 'users' table with a column 'id' that matches the provided user id."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0004924349999999994, 'prompt_tokens': 413, 'prompt_time': 0.046605032, 'completion_tokens': 192, 'completion_time': 0.16, 'total_tokens': 605, 'total_time': 0.206605032}, 'system_fingerprint': 'fp_a97cfe35ae', 'x_groq': {'id': 'req_01jcj4fm8sf3t81qctj29vph63'}}
+2024-11-13 12:18:27,103 - INFO - Generated SQL query: I apologize, but the natural language query 'show me the user name of user id wg24UxdW7Q2L4X7ssYqB' does not match the provided schema. There is no 'users' table with a column 'id' that matches the provided user id.
+2024-11-13 12:18:27,104 - WARNING - The generated query is not a SELECT query, so no results can be fetched.
+2024-11-13 12:19:07,334 - INFO - Received query: show me list from user tables
+2024-11-13 12:19:07,336 - WARNING - No tables found in the database.
+2024-11-13 12:19:07,338 - WARNING - No columns found for table: companies
+2024-11-13 12:19:07,339 - WARNING - No columns found for table: locations
+2024-11-13 12:19:07,339 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me list from user tables' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:19:08,141 - INFO - Received response from Groq API: {'id': 'chatcmpl-6b8e407b-e677-4db5-b439-6bffd41099dc', 'object': 'chat.completion', 'created': 1731480547, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "The natural language query 'show me list from user tables' is unclear and does not provide enough information to generate a specific SQL query. However, based on the provided schema and relationships, I can assume that the user wants to retrieve a list of users from the 'users' table.\n\nHere is a possible SQL query that retrieves a list of users from the 'users' table:\n\n```sql\nSELECT * FROM users;\n```\n\nThis query will return all columns (`*`) from the 'users' table. If you want to retrieve specific columns, you can specify them instead of using the `*` wildcard. For example, to retrieve only the 'id', 'name', and 'balance' columns, you can use the following query:\n\n```sql\nSELECT id, name, balance FROM users;\n```\n\nPlease note that the provided schema and relationships do not include a 'user' table. The 'users' table is related to the 'companies' table through the 'company_id' column, which means that each user belongs to a specific company. If you want to retrieve a list of users for a specific company, you can use a query like this:\n\n```sql\nSELECT * FROM users WHERE company_id = <company_id>;\n```\n\nReplace `<company_id>` with the actual ID of the company for which you want to retrieve the list of users."}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.006029315, 'prompt_tokens': 377, 'prompt_time': 0.017839801, 'completion_tokens': 275, 'completion_time': 0.229166667, 'total_tokens': 652, 'total_time': 0.247006468}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj4gwdhftdr1dtpm0b7cp6z'}}
+2024-11-13 12:19:08,150 - INFO - Generated SQL query: SELECT * FROM users;
+2024-11-13 12:19:08,152 - ERROR - Error generating or executing the SQL query: no such table: users
+2024-11-13 12:19:41,531 - INFO - Received query: show me list of tables in the database
+2024-11-13 12:19:41,533 - WARNING - No tables found in the database.
+2024-11-13 12:19:41,534 - WARNING - No columns found for table: companies
+2024-11-13 12:19:41,535 - WARNING - No columns found for table: locations
+2024-11-13 12:19:41,535 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me list of tables in the database' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:19:42,255 - INFO - Received response from Groq API: {'id': 'chatcmpl-af9ba913-a61c-4692-8139-db4153f22129', 'object': 'chat.completion', 'created': 1731480581, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Based on the schema and relationships provided, the natural language query "show me list of tables in the database" can be converted to a valid SQL query as follows:\n\nSQL Query:\n```sql\nSELECT name \nFROM sqlite_master \nWHERE type=\'table\';\n```\nExplanation:\n\n* The `sqlite_master` table is a special table in SQLite that contains metadata about the database, including the names of all tables.\n* The `type` column in the `sqlite_master` table contains the type of each entry, and we\'re interested in tables, so we filter on `type=\'table\'`.\n* The `name` column contains the names of the tables, which we select to get the list of tables in the database.\n\nThis SQL query will return a list of all tables in the database, including the ones mentioned in the schema (companies, locations, users, tickets, and activities).'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0007525370000000045, 'prompt_tokens': 381, 'prompt_time': 0.04473923, 'completion_tokens': 179, 'completion_time': 0.149166667, 'total_tokens': 560, 'total_time': 0.193905897}, 'system_fingerprint': 'fp_6a6771ae9c', 'x_groq': {'id': 'req_01jcj4hxssf6jr9fs3g419cm5x'}}
+2024-11-13 12:19:42,265 - INFO - Generated SQL query: SELECT name 
+FROM sqlite_master 
+WHERE type='table';
+2024-11-13 12:19:42,267 - INFO - No results found for the query.
+2024-11-13 12:19:48,374 - INFO - Received query: show me list of table in the database
+2024-11-13 12:19:48,378 - WARNING - No tables found in the database.
+2024-11-13 12:19:48,407 - WARNING - No columns found for table: companies
+2024-11-13 12:19:48,408 - WARNING - No columns found for table: locations
+2024-11-13 12:19:48,409 - INFO - Sending request to Groq API for query: Analyze the following schema and generate an SQL query for the natural language query: 'show me list of table in the database' based on the following relationships between the tables: 
+
+
+        - 'companies' table has columns: id, company_name
+        - 'locations' table has columns: id, company_id, location_name
+        - 'users' table has columns: id, company_id, name, balance
+        - 'tickets' table has columns: id, location_id, ticket_name
+        - 'activities' table has columns: id, location_id, ticket_id, activity_name
+        
+2024-11-13 12:19:48,991 - INFO - Received response from Groq API: {'id': 'chatcmpl-7e2341a9-8fca-44f6-b69c-3c4a5a1de46a', 'object': 'chat.completion', 'created': 1731480588, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Based on the schema and relationships provided, the natural language query "show me list of tables in the database" can be converted to a valid SQL query as follows:\n\n```sql\nSELECT name \nFROM sqlite_master \nWHERE type=\'table\';\n```\n\nThis SQL query will return a list of all tables in the SQLite database, including the tables mentioned in the schema: \'companies\', \'locations\', \'users\', \'tickets\', and \'activities\'.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.0034711359999999997, 'prompt_tokens': 381, 'prompt_time': 0.021635041, 'completion_tokens': 90, 'completion_time': 0.075, 'total_tokens': 471, 'total_time': 0.096635041}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jcj4j4fkf6ksngxbm308ehmk'}}
+2024-11-13 12:19:48,998 - INFO - Generated SQL query: SELECT name 
+FROM sqlite_master 
+WHERE type='table';
+2024-11-13 12:19:49,002 - INFO - No results found for the query.
