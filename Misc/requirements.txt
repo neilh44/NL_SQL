@@ -2,5 +2,3 @@ requests
 groq
 python-dotenv
 spacy
-en-core-web-sm
-
