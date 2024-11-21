@@ -1,3 +1,13 @@
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 import streamlit as st
 import pandas as pd
 import os
@@ -5,6 +15,8 @@ from dotenv import load_dotenv
 from llm_service import LLMService
 from nl_converter import NLConverter
 import logging
+
+
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
