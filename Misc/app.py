@@ -6,15 +6,36 @@ from llm_service import LLMService
 from nl_converter import NLConverter
 import logging
 
-
-
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# CSS to position a 100x100 px div at the top-right corner
+HIDE_CORNER_DIV = """
+<style>
+#corner-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+    z-index: 1000; /* Ensure it appears on top */
+    display: none; /* Initially hidden */
+}
+</style>
+<div id="corner-div"></div>
+<script>
+document.getElementById('corner-div').style.display = 'block';
+</script>
+"""
+
 def main():
     st.title("Natural Language to SQL Query Converter")
     st.write("Enter your question about the database in natural language.")
+    
+    # Add the corner div
+    st.markdown(HIDE_CORNER_DIV, unsafe_allow_html=True)
     
     # Load environment variables
     load_dotenv()
@@ -86,4 +107,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
