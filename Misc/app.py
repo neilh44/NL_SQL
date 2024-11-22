@@ -19,7 +19,7 @@ HIDE_CORNER_DIV = """
     right: 0;
     width: 100px;
     height: 100px;
-    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+    background-color: red:/* Semi-transparent blue */
     z-index: 1000; /* Ensure it appears on top */
     display: none; /* Initially hidden */
 }
